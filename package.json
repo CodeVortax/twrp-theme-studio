@@ -1,15 +1,9 @@
 {
   "name": "twrp-theme-studio",
-  "version": "0.1.0",
-  "description": "Web-based editor for TWRP theme customization",
+  "version": "0.2.0",
+  "description": "Visual, live-preview editor for TWRP recovery themes",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "author": "",
+  "scripts": { "start": "node server.js" },
   "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2",
-    "body-parser": "^1.20.2"
-  }
+  "dependencies": { "express": "^4.18.2" }
 }

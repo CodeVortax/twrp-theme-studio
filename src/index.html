@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TWRP Theme Studio</title>
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d0f12">
+<title>TWRP Theme Studio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="preview" class="preview"></div>
-    <!-- Floating edit button -->
-    <button id="editBtn" class="edit-btn">&#9998;</button>
-    <!-- Edit panel (hidden by default) -->
-    <div id="editPanel" class="edit-panel hidden">
-        <h2>Theme Editor</h2>
-        <div id="colorControls"></div>
-        <div id="imageControls"></div>
-        <button id="saveBtn" class="save-btn">Save to source</button>
-        <button id="closeBtn" class="close-btn">Close</button>
-    </div>
-    <script src="themeParser.js"></script>
-    <script src="app.js"></script>
+<div id="app">
+  <header id="bar">
+    <button id="bBack" title="Back">&#8592;</button>
+    <select id="pageSel" title="Page"></select>
+    <div class="seg" id="modeSeg"><button data-m="preview" class="on">Preview</button><button data-m="edit">Select</button></div>
+    <span class="grow"></span>
+    <button id="bUndo" title="Undo (Ctrl+Z)">&#8630;</button>
+    <button id="bRedo" title="Redo (Ctrl+Y)">&#8631;</button>
+    <button id="bSave" class="primary" title="Save (Ctrl+S)">Save<i id="dot"></i></button>
+  </header>
+  <main id="stageWrap"><div id="phone"><div id="screen"></div></div></main>
+  <section id="panel" class="hidden">
+    <nav id="tabs"></nav>
+    <div id="tabBody"></div>
+    <footer>
+      <label class="chk"><input type="checkbox" id="optCommit"> git commit</label>
+      <label class="chk"><input type="checkbox" id="optPush"> push</label>
+      <button id="bExport">Export ui.zip</button>
+      <button id="bReload" class="danger">Reload</button>
+    </footer>
+  </section>
+</div>
+<button id="fab" title="Edit theme">&#9998;</button>
+<button id="fsBtn" title="Fullscreen preview">&#9974;</button>
+<div id="toast"></div>
+<script src="engine.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
