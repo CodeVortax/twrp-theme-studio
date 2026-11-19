@@ -28,3 +28,7 @@ Shortcuts: Ctrl+S save, Ctrl+Z / Ctrl+Y undo/redo, Esc deselect.
 ## Notes
 - Fonts are not in the repo, so the preview uses Roboto Condensed look-alikes; use *Simulate → Font scale* if sizes feel off.
 - Edits to elements/styles/fonts rewrite the XML file tab-indented (comments kept, blank lines dropped).
+
+## License
+
+AGPL-3.0-only. See [LICENSE](LICENSE).
