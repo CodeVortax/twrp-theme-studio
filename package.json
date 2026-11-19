@@ -4,6 +4,6 @@
   "description": "Visual, live-preview editor for TWRP recovery themes",
   "main": "server.js",
   "scripts": { "start": "node server.js" },
-  "license": "MIT",
+  "license": "AGPL-3.0-only",
   "dependencies": { "express": "^4.18.2" }
 }
